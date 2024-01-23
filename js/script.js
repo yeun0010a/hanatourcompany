@@ -1,12 +1,12 @@
 $(function(){
-// 메뉴
-$(".pcBigMenu, .subMenu>li, .subMenuBG").mouseenter(function(){
-    $('.subMenu>li').stop().slideDown(200);
-    $('.subMenuBG').stop().slideDown(200);
+
+$("#menu").slicknav();
+// pc 슬라이드 업다운
+$("#menu>li,#menu>li>ul, #smenu_bar").mouseover(function(){
+    $("#menu>li>ul, #smenu_bar").stop().slideDown("200");  
 });
-$(".pcBigMenu, .subMenu>li, .subMenuBG").mouseleave(function(){
-    $('.subMenu>li').stop().slideUp(200);
-    $('.subMenuBG').stop().slideUp(200);
+$(".nav, #smenu_bar").mouseleave(function(){
+    $("#menu>li>ul, #smenu_bar").stop().slideUp("100");  
 });
 
 
