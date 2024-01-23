@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+
 :root { --mainColor:#5E2BB8; /* var(--mainColor) */ } 
 
 /* reset */
@@ -132,7 +134,7 @@ footer a.bold, footer p.bold { color: #1f1f1f; font-weight: 400; }
 .wrap section#vedeo { height: 800px; overflow: hidden; } 
 .wrap section#vedeo .vedeoText { transform: scale(0.8) translateY(-50px); } 
 .wrap section#vedeo .vedeoText p.topText { font-size: 40px; top: 285px;width: 600px;text-align: center; } 
-.wrap section#vedeo .vedeoText p.resLink { font-size: 25px; padding: 15x 40px; } 
+.wrap section#vedeo .vedeoText p.resLink { font-size: 25px; padding: 15px 40px; } 
 /* section card */
 section#card .cardFraim:nth-child(1) { position: absolute; top: 0; left: calc(50vw - 400px); } 
 section#card .cardFraim:nth-child(2) { position: absolute; top: 420px; left:calc(50vw - 90px); } 
@@ -172,7 +174,7 @@ section#news .newsInner .newsGorup .newsCard:last-child{display: none;}
 /* section vedeo */
 .wrap section#vedeo { height: 550px; } 
 .wrap section#vedeo .vedeoText { transform: scale(0.5) translateY(-350px); } 
-.wrap section#vedeo .vedeoText a p.resLink {width: 230px; padding: 21px auto; } 
+.wrap section#vedeo .vedeoText a p.resLink {width: 230px; padding: 21px 0; } 
 /* section catch */
 section#catch {margin-top: -150px;}
 section#catch .catchTextBox .catchTexts .catchTextMain { font-size: 18px;  } 
