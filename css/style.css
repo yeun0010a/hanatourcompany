@@ -33,20 +33,22 @@ header nav .inner { position: relative; max-width: 1400px; margin: 0 auto; }
 /* logo */
 h1.logo a img { height: 30px; } 
 h1.logo a img:hover { opacity: 0.8; } 
+h2.logo a img { height: 30px; } 
+h2.logo a img:hover { opacity: 0.8; } 
 /* menu */
 header nav .inner ul.nav-list { position: absolute; right: 0; top: 0; display: flex; z-index: 9999;} 
 header nav .inner ul.nav-list>li { position: relative; padding: 0 38px; width: auto; /* 너비 자동계산*/font-weight: 600;}
 header nav .inner ul.nav-list a { display: block; position: relative; } 
 
 /* 대메뉴 */
-header nav .inner ul.nav-list>li>a { font-size: 17px; color: #5E2BB8; } 
+header nav .inner ul.nav-list>li>a { font-size: 17px; color: var(--mainColor); } 
 header nav .inner ul.nav-list>li:hover>a { color: #08D1D9; } 
 
 /* 서브메뉴 - 2Depths */
 header nav .inner ul.nav-list li ul { display: none; position: absolute; width: 100%; left: 0; text-align: center; margin-top: 18px; z-index: 999;}
-header nav .inner ul.nav-list>li>ul>li>a { display: block; font-size: 14px; color: #5E2BB8; margin: 0 0 15px 0; letter-spacing: -1px; height: 30px; line-height: 30px; font-weight: 400;} 
-header nav .inner ul.nav-list>li>ul>li>a:hover { opacity: 0.8; } 
-#smenu_bar { position: absolute; top: 100px; width: 100%; background-color: #fcfcfc; min-width: 1200px; min-height: 300px; border-top: 1px solid #668093; display: none;z-index: 99;
+header nav .inner ul.nav-list>li>ul>li>a { display: block; font-size: 14px; color: #353535; margin: 0 0 15px 0; letter-spacing: -1px; height: 30px; line-height: 30px; font-weight: 400;} 
+header nav .inner ul.nav-list>li>ul>li>a:hover { color: var(--mainColor); } 
+#smenu_bar { position: absolute; top: 100px; width: 100%; background-color: #fcfcfc; min-width: 1200px; height: 300px; border-top: 1px solid #668093; display: none;z-index: 99;
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);} 
 
 /* slick nav plugin */
@@ -55,17 +57,16 @@ header nav .inner ul.nav-list>li>ul>li>a:hover { opacity: 0.8; }
 /* 토글버튼 */
 .slicknav_btn { position: relative; display: block; float: right; padding: 0; cursor: pointer; margin: 0 20px 0 0; } 
 /* 토글버튼 라인 */
-.slicknav_menu .slicknav_icon-bar { display: block; width: 32px; height: 3px; background-color: #5E2BB8; } 
+.slicknav_menu .slicknav_icon-bar { display: block; width: 32px; height: 3px; background-color: var(--mainColor); } 
 /* 토글라인 사이의 여백 */
 .slicknav_menu .slicknav_icon-bar+.slicknav_icon-bar { margin-top: 7px; } 
 /* 모바일 메뉴 */
-.slicknav_nav { position: relative; top: 37px; color: #5E2BB8; margin: 0; padding: 0; clear: both; /* border-top: 1px solid #333; */}
+.slicknav_nav { position: relative; top: 37px; color: var(--mainColor); margin: 0; padding: 0; clear: both; /* border-top: 1px solid #333; */}
 .slicknav_nav ul,
 .slicknav_nav ul li { border-bottom: 1px solid #eae9e9; } 
 /* 모바일 대메뉴 */
 .slicknav_nav li>a { position: relative; border-bottom: 1px solid #ddd; box-sizing: border-box; } 
-/* sub bg */
-/* .slicknav_nav li ul { border: 0; background-color: #d5d5d5; padding: 10px 0; }  */
+.slicknav_nav li>a:hover { color: var(--mainColor); } 
 /* 서브메뉴 */
 .slicknav_nav li ul li { border-bottom: 0; } 
 .slicknav_nav li ul li a { color: #888; } 
@@ -73,18 +74,21 @@ header nav .inner ul.nav-list>li>ul>li>a:hover { opacity: 0.8; }
 .slicknav_nav li ul li a.slicknav_item { font-size: 14px; padding: 10px 30px; background-color: #f5f4f4;} 
 .slicknav_nav .slicknav_item { display: block; } 
 .slicknav_nav .slicknav_item a { margin: 0; padding: 0; } 
+.slicknav_nav .slicknav_item:hover{ background-color: #ffffff;} 
+.slicknav_nav .slicknav_item:hover a{  color: var(--mainColor);background-color: #ffffff;} 
 /* 서브 hover */
-.slicknav_nav>li>ul>li>a:hover { background-color: rgba(0, 0, 0, 0.1); color: #5E2BB8;background-color: #fff; } 
-.slicknav_nav a { display: block; color: #666; padding: 15px; background-color: #fcfcfc;} 
+.slicknav_nav>li>ul>li>a:hover {color: var(--mainColor);background-color: #ffffff;} 
+.slicknav_nav a { display: block; color: #666; padding: 15px; background-color: #fefefe;} 
+/* .slicknav_nav }  */
 .slicknav_menu::after { clear: both; } 
 /* 모바일메뉴 TEXT */
-.slicknav_menu .slicknav_menutxt { display: block; line-height: 18px; float: left; color: #5E2BB8; font-weight: bold; text-shadow: 0 1px 3px #000; display: none; font-size: 0; } 
+.slicknav_menu .slicknav_menutxt { display: block; line-height: 18px; float: left; color: var(--mainColor); font-weight: bold; text-shadow: 0 1px 3px #000; display: none; font-size: 0; } 
 .slicknav_nav .slicknav_txtnode { margin-left: 15px; } 
 /* 더보기버튼 */
 .slicknav_nav .slicknav_arrow { font-size: 0; position: absolute; right: 0; top: 50%; width: 10px; } 
 .slicknav_nav .slicknav_collapsed .slicknav_item span.slicknav_arrow::before { content: "+"; position: absolute; right: 30px; font-size: 17px; opacity: 0.6; width: 10px; height: 10px; line-height: 8px; margin-top: -5px;}
 .slicknav_nav .slicknav_open .slicknav_item span.slicknav_arrow::before { content: "-"; position: absolute; right: 28px; font-size: 18px; opacity: 0.6; width: 10px; height: 5px; line-height: 0; margin-top: -3px;}
-#mobile_menu h1 a { display: none; } 
+#mobile_menu { display: none; } 
 
 
 /* ============section1 vedeo============== */
@@ -179,7 +183,7 @@ footer a.bold, footer p.bold { color: #1f1f1f; font-weight: 400; }
  =============================================================*/
  @media (max-width:1000px){
 /* section vedeo */
-.wrap section#vedeo { height: 800px; overflow: hidden; } 
+.wrap section#vedeo { height: 800px; overflow: hidden;margin-top: -50px; } 
 .wrap section#vedeo .vedeoText { transform: scale(0.8) translateY(-50px); } 
 .wrap section#vedeo .vedeoText p.topText { font-size: 40px; top: 285px;width: 600px;text-align: center; } 
 .wrap section#vedeo .vedeoText p.resLink { font-size: 25px; padding: 15px 40px; } 
@@ -189,25 +193,27 @@ section#card .cardFraim:nth-child(2) { position: absolute; top: 420px; left:calc
 section#card .cardFraim:nth-child(3) { position: absolute; top: 840px; left: calc(50vw - 400px); } 
 section#card .cardBg .cardBgBorderGroup { margin-left: calc(-1650px + 50vw); } 
 
-#mobile_menu>h1 {  padding: 27px 0 0 20px;}
+#mobile_menu{display: block;}
+#mobile_menu>h2 {  padding: 27px 0 0 20px;}
 
-#mobile_menu h1 a { display: block; } 
+#mobile_menu h2 a { display: block; } 
 
 /* pc menu 가리기 */
 .nav { display: none; } 
 
 /* 토글 보여줌 */
-.slicknav_menu { display: block; color: #5E2BB8; } 
-/* span.slicknav_icon-bar{color: #5E2BB8;} */
+.slicknav_menu { display: block; color: var(--mainColor); } 
+.in_menu01 .slicknav_item{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset}
+.in_menu05 .slicknav_item{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)}
+
+
+
  }
 
  /* ===========================================================
 880px 
  =============================================================*/
  @media (max-width:880px){
-/* header */
-.wrap header .headerInner nav.menu ul.bigMenu>li{display: none;}
-.Mmenu{display: block;font-size: 28px;}
 /* section catch */
 section#catch .catchTextBox {  padding:80px 25px; box-sizing: border-box;  width: calc(100vw - 60px); height: auto; margin: 250px auto 200px; } 
 section#catch .carrier { height: 600px; width: 600px;  top: 50px; left: calc(50vw - 50px); } 
@@ -231,7 +237,7 @@ section#news .newsInner .newsGorup .newsCard:last-child{display: none;}
  =============================================================*/
  @media (max-width:640px){
 /* section vedeo */
-.wrap section#vedeo { height: 550px; } 
+.wrap section#vedeo { height: 550px; margin-top: -50px;} 
 .wrap section#vedeo .vedeoText { transform: scale(0.5) translateY(-350px); } 
 .wrap section#vedeo .vedeoText a p.resLink {width: 230px; padding: 21px 0; } 
 /* section catch */
@@ -258,7 +264,7 @@ footer .footer-text { width: 100%; height: auto;}
  =============================================================*/
  @media (max-width:460px){
 
-    .wrap section#vedeo { height: 450px; } 
+    .wrap section#vedeo { height: 450px; margin-top: -100px;} 
     .wrap section#vedeo .vedeoText { transform: scale(0.4) translateY(-550px); } 
 
     section#catch .catchTextBox { padding: 35px 25px; }
